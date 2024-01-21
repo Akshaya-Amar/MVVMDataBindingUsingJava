@@ -1,11 +1,11 @@
 package com.example.mvvmdatabindingusingjava;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import android.os.Bundle;
 
 import com.example.mvvmdatabindingusingjava.databinding.ActivityMainBinding;
 
