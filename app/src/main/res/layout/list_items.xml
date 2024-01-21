@@ -1,5 +1,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <data>
+        <variable
+            name="myModel"
+            type="com.example.mvvmdatabindingusingjava.MyModel" />
+    </data>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,10 +37,4 @@
                 android:text="@{myModel.website, default=website}" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <data>
-        <variable
-            name="myModel"
-            type="com.example.mvvmdatabindingusingjava.MyModel" />
-    </data>
 </layout>

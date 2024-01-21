@@ -8,8 +8,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -39,6 +37,7 @@ public class MyViewModel extends ViewModel {
                     List<MyModel> models = new ArrayList<>();
                     try {
                         for (int i = 0; i < response.length(); i++) {
+
                             JSONObject jsonObject = response.getJSONObject(i);
                             String name = jsonObject.getString("name");
                             String email = jsonObject.getString("email");
