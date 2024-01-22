@@ -1,5 +1,6 @@
 package com.example.mvvmdatabindingusingjava;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -13,12 +14,17 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
+    private final Context context;
     private List<MyModel> myModelList = new ArrayList<>();
+
+    public MyAdapter(Context context) {
+        this.context = context;
+    }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ListItemsBinding binding = ListItemsBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
+        ListItemsBinding binding = ListItemsBinding.inflate(LayoutInflater.from(context), parent, false);
         return new MyViewHolder(binding);
     }
 
@@ -36,7 +42,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public void setMyModelList(List<MyModel> myModelList) {
         this.myModelList = myModelList;
-        notifyDataSetChanged();
+        notifyItemInserted(myModelList.size() - 1);
+//        notifyDataSetChanged(); //will refresh the entire dataset and update the entire list when there's a change.
     }
 
     static class MyViewHolder extends RecyclerView.ViewHolder {

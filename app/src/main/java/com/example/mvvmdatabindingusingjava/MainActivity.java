@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setViewModel(viewModel);
 
-        MyAdapter adapter = new MyAdapter();
+        MyAdapter adapter = new MyAdapter(this);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
         binding.recyclerView.setAdapter(adapter);
 
