@@ -1,4 +1,4 @@
-package com.example.mvvmdatabindingusingjava;
+package com.example.mvvmdatabindingusingjava.activity;
 
 import android.os.Bundle;
 
@@ -7,6 +7,9 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.example.mvvmdatabindingusingjava.adapter.MyAdapter;
+import com.example.mvvmdatabindingusingjava.viewmodel.MyViewModel;
+import com.example.mvvmdatabindingusingjava.R;
 import com.example.mvvmdatabindingusingjava.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

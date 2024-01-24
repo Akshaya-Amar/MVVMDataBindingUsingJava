@@ -3,7 +3,7 @@
     <data>
         <variable
             name="myModel"
-            type="com.example.mvvmdatabindingusingjava.MyModel" />
+            type="com.example.mvvmdatabindingusingjava.model.MyModel" />
     </data>
 
     <androidx.cardview.widget.CardView

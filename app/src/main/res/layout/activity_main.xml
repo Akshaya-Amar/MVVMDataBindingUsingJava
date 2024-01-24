@@ -3,7 +3,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.mvvmdatabindingusingjava.MyViewModel" />
+            type="com.example.mvvmdatabindingusingjava.viewmodel.MyViewModel" />
     </data>
 
     <RelativeLayout

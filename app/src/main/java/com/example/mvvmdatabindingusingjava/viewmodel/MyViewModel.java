@@ -1,4 +1,4 @@
-package com.example.mvvmdatabindingusingjava;
+package com.example.mvvmdatabindingusingjava.viewmodel;
 
 import android.content.Context;
 import android.util.Log;
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel;
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.mvvmdatabindingusingjava.model.MyModel;
 
 import org.json.JSONException;
 import org.json.JSONObject;

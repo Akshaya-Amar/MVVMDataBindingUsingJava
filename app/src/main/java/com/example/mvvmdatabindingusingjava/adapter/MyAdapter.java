@@ -1,4 +1,4 @@
-package com.example.mvvmdatabindingusingjava;
+package com.example.mvvmdatabindingusingjava.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvvmdatabindingusingjava.databinding.ListItemsBinding;
+import com.example.mvvmdatabindingusingjava.model.MyModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +49,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        final ListItemsBinding binding;
+        private final ListItemsBinding binding;
 
         MyViewHolder(ListItemsBinding binding) {
             super(binding.getRoot());

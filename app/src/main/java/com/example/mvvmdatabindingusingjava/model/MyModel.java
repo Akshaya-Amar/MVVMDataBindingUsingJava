@@ -1,4 +1,4 @@
-package com.example.mvvmdatabindingusingjava;
+package com.example.mvvmdatabindingusingjava.model;
 
 public class MyModel {
 
